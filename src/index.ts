@@ -26,7 +26,7 @@ const app = new Elysia()
   })
   .get("/large-data", () => {
     // Generate 1000 items (adjust this number to change payload size)
-    const data = generateLargeData(Math.floor(Math.random() * 100000 + 100));
+    const data = generateLargeData(Math.floor(Math.random() * 100_000 + 1000));
 
     return {
       success: true,
